@@ -1,0 +1,41 @@
+.header{
+    background-color: rgb(41, 42, 42);
+    border-top-color: rgb(91, 95, 95);
+}
+
+.prof-img{
+    max-width: 20%;
+    border-radius: 100%;
+}
+
+.prof-cont{
+    vertical-align: middle;
+} h1{
+    color: rgb(181, 173, 160);
+} h2{
+    color: rgb(157, 147, 133);
+}
+
+.icons {
+    margin-top:20px;
+    padding-left: 0px;
+} i{
+    color: rgb(229, 224, 216);
+    padding-left:2px;
+    width: 32px;
+    height: 32px;
+    
+} a{
+    padding-top: 11px;
+}ul{
+    display:flex;
+    list-style-type: none;
+}li{
+    margin-right:0px;
+    width:48px;
+    height: 48px;
+    background-color: rgb(73, 77, 77);
+    padding: 8px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
