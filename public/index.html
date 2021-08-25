@@ -10,7 +10,29 @@
     <link rel="stylesheet" href="assets/styles/index.css">
 </head>
 <body>
-    <header class="header">
+    <header>
+        <ul id="menu" class="shadow">
+            <li>
+                <a href="#about">Acerca De</a>
+            </li>
+            <li>
+                <a href="#experience">Experiencia</a>
+            </li>
+            <li>
+                <a href="#education">Educación</a>
+            </li>
+            <li>
+                <a href="#projects">Proyectos</a>
+            </li>
+            <li>
+                <a href="#skills">Aptitudes</a>
+            </li>
+            <li>
+                <a href="#contact">Contactar</a>
+            </li>
+        </ul>
+    </header>
+    <div id="inicio">
         <div class="container pt-4 pb-4 " id="titulo">
                 <h1 class="name">LEONARDO ABANTO</h1>
                 <h2 class="desc">Ingeniero de Sistemas</h2>
@@ -30,14 +52,14 @@
         <div id="overlay"></div>
         <div id="boton-abajo">
 
-            <a href="#cuerpo" onclick="window.scrollTo(0, document.getElementById('cuerpo').offsetTop); return false;">
+            <a onclick="window.scrollTo(0, document.getElementById('cuerpo').offsetTop); return false;">
                 
                     <i class="fa fa-chevron-down" aria-hidden="true"></i>
                 
             </a>
 
         </div>
-    </header>
+    </div>
     <div class="container mt-4" id="cuerpo">
                 <!-- ACERCA DE -->
                 <section class="section">

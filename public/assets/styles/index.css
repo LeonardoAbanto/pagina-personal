@@ -1,4 +1,33 @@
-.header{
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 10;
+}
+header li {
+    display: inline-block;
+}
+header ul {
+    display: inline-block;
+    background: rgb(36, 37, 37);
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    background-image: initial;
+    background-color: rgb(36, 37, 37);
+}
+header a {
+    color: rgb(87, 159, 205);
+    padding:10px;
+    display:block;
+    text-decoration: none;
+}
+
+#inicio{
     background-image: url("../media/fondo.jpg");
     background-size: cover;
     height: 100vh;
@@ -12,10 +41,10 @@
     font-family:'Lato', sans-serif;
 }
 #titulo h1{
-    color: white;
+    color: rgb(229, 224, 216);
     font-size: 4em;
     font-weight: 900;
-    
+    margin-bottom: 0px;    
     letter-spacing: 0.01em;
 }
 #titulo h2{
