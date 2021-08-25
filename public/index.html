@@ -9,34 +9,40 @@
     <link rel="stylesheet" href="assets/styles/index.css">
 </head>
 <body>
-    <header class="header ">
-        <div class="container pt-4 pb-4 ">
-            <div class="row d-flex align-items-center">
-                <img class="prof-img col-4" src="assets/media/fotocuadrada.jpg" alt="Leonardo Abanto">
-                <div class="prof-cont col-8">
-                    <h1 class="name">Leonardo Abanto</h1>
-                    <h2 class="desc">Ingeniero de Sistemas | Universidad de Lima</h2>
-                    <ul class="icons">
-                        <li>
-                            <a href="https://www.linkedin.com/in/leonardo-abanto/" target="_blank">
-                                <i class="fa fa-linkedin fa-2x"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://github.com/LeonardoAbanto" target="_blank">
-                                <i class="fa fa-github fa-2x"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+    <header class="header">
+        <div class="container pt-4 pb-4 " id="titulo">
+                <h1 class="name">LEONARDO ABANTO</h1>
+                <h2 class="desc">Ingeniero de Sistemas</h2>
+                <!-- <ul class="icons">
+                    <li>
+                        <a href="https://www.linkedin.com/in/leonardo-abanto/" target="_blank">
+                            <i class="fa fa-linkedin fa-2x"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/LeonardoAbanto" target="_blank">
+                            <i class="fa fa-github fa-2x"></i>
+                        </a>
+                    </li>
+                </ul> -->
+        </div>
+        <div id="overlay"></div>
+        <div id="boton-abajo">
+
+            <a href="#cuerpo">
+                
+                    <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                
+            </a>
+
         </div>
     </header>
-    <div class="container mt-4">
+    <div class="container mt-4" id="cuerpo">
         <div class="row">
             <div class="col-8 px-2">
                 <!-- ACERCA DE -->
                 <section class="section">
+                    <img class="prof-img" src="assets/media/fotocuadrada.jpg" alt="Leonardo Abanto">
                     <div class="section-inner">
                         <h2>Acerca de</h2>
                         <div>Estudiante de décimo superior de Ingeniería de Sistemas en la universidad de Lima.</div>
@@ -161,5 +167,6 @@
             </div>
         </div>
     </div>
+    <script src="assets/js/index.js"></script>
 </body>
 </html>
