@@ -11,16 +11,16 @@
 </head>
 <body>
     <!-- Botones encabezado -->
-    <header>
+    <header class="header">
         <ul id="menu" class="shadow">
             <li>
-                <a href="#" onclick="window.scrollTo(0, document.getElementById('about').offsetTop); return false;">Acerca De</a>
+                <a href="#" onclick="window.scrollTo(0, document.getElementById('acercade').offsetTop); return false;">Acerca De</a>
             </li>
             <li>
-                <a href="#experience">Experiencia</a>
+                <a href="#" onclick="window.scrollTo(0, document.getElementById('proyectos').offsetTop); return false;">Proyectos</a>
             </li>
             <li>
-                <a href="#education">Educación</a>
+                <a href="#" onclick="window.scrollTo(0, document.getElementById('educacion').offsetTop); return false;">Educación</a>
             </li>
             <li>
                 <a href="#projects">Proyectos</a>
@@ -34,13 +34,13 @@
         </ul>
     </header>
     <!-- Sección principal -->
-    <div id="inicio">
-        <div class="container pt-4 pb-4 " id="titulo">
+    <div class="inicio">
+        <div class="container pt-4 pb-4 titulo" >
                 <h1 class="name">LEONARDO ABANTO</h1>
                 <h2 class="desc">Ingeniero de Sistemas</h2>
         </div>
-        <div id="overlay"></div>
-        <div id="boton-abajo">
+        <div class="overlay"></div>
+        <div class="boton-abajo">
             <a  href="#" onclick="window.scrollTo(0, document.getElementById('cuerpo').offsetTop); return false;">
                     <i class="fa fa-chevron-down" aria-hidden="true"></i>        
             </a>
@@ -48,7 +48,7 @@
     </div>
     <div id="cuerpo">
                 <!-- ACERCA DE -->
-                <section class="section" id="about">
+                <section class="section" id="acercade">
                     <div class="container">
                         <div class="row">
                             <div class="col-4">
@@ -59,7 +59,7 @@
                     </div>
                 </section>
                 <!-- NUEVO PROYECTOS -->
-                <section class="section" id="projects">
+                <section class="section" id="proyectos">
                         <h2>Proyectos</h2>
                         <div class="container">
                             <!-- Proyecto 1 -->
@@ -69,7 +69,7 @@
                                 </div>
                                 <div class="proyecto-txt">
                                     <h3>Manjilane</h3>
-                                    <p>Manjilane es una plataforma web de tipo Marketplace diseñada para conectar importadores con mayoristas. Elaborada utilizando WordPress como participación para el Concurso Primer Paso de la Universidad de Lima, Manjilane fue incluida dentro de los 20 mejores proyectos.</p>
+                                    <p>Manjilane es una plataforma web de tipo Marketplace diseñada para conectar importadores con mayoristas. Nació como participación para el Concurso Primer Paso de la Universidad de Lima, en el que figuró dentro de los 20 proyectos finalistas.</p>
                                     <a a href="https://www.manjilane.com/" target="_blank">Ver Proyecto</a>
                                     <div class="skills">
                                         <ul>
@@ -87,7 +87,7 @@
                                 </div>
                                 <div class="proyecto-txt">
                                     <h3>Titulo</h3>
-                                    <p>DescripsionEstudiante de Ingeniería de Sistemas en la universidad de LimaEstudiante de Ingeniería de Sistemas en la universidad de Lima</p>
+                                    <p>Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descripción </p>
                                     <a href="www.google.com">Ver Proyecto</a>
                                     <div class="skills">
                                         <ul>
@@ -98,6 +98,17 @@
                                 </div>
                             </div>
                         </div>
+                </section>
+                <!-- NUEVO EDUCACION -->
+                <section class="section" id="educacion">
+                    <h2>Educación</h2>
+                    <!-- Edu1 -->
+                    <div class="educacion-bloque">
+                        <h3>Universidad de Lima</h3>
+                        <span class="educacion-fecha">Marzo 2018 - Actualidad</span>
+                        <h4>Ingeniería de sistemas</h4>
+                        <p>studiante de Ingeniería de Sistemas en la universidad de LimaEstudianstudiante de Ingeniería de Sistemas en la universidad de LimaEstudian</p>
+                    </div>
                 </section>
                 <!-- LOGROS Y CERTIFICACIONES -->
                 <section class="section">
@@ -146,23 +157,6 @@
                                 <li class="my-2">
                                     <i class="fa fa-envelope-o"></i>
                                     <a href="mailto:leonardo_abanto@hotmail.com">leonardo_abanto@hotmail.com</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </section>
-                <!-- EDUCACION -->
-                <section class="section">
-                    <div class="section-inner">
-                        <h2>Educación</h2>
-                        <div class="content">
-                            <ul class="unlysted nopad">
-                                <li class="my-2">
-                                    <h3 class="h4 mt-4">
-                                        <i class="fa fa-graduation-cap"></i>
-                                        Universidad de Lima
-                                    </h3>
-                                    Ingeniería de Sistemas (2018-Actualidad)
                                 </li>
                             </ul>
                         </div>
