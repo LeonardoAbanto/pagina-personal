@@ -10,10 +10,11 @@
     <link rel="stylesheet" href="assets/styles/index.css">
 </head>
 <body>
+    <!-- Botones encabezado -->
     <header>
         <ul id="menu" class="shadow">
             <li>
-                <a href="#about">Acerca De</a>
+                <a href="#" onclick="window.scrollTo(0, document.getElementById('about').offsetTop); return false;">Acerca De</a>
             </li>
             <li>
                 <a href="#experience">Experiencia</a>
@@ -32,63 +33,71 @@
             </li>
         </ul>
     </header>
+    <!-- Sección principal -->
     <div id="inicio">
         <div class="container pt-4 pb-4 " id="titulo">
                 <h1 class="name">LEONARDO ABANTO</h1>
                 <h2 class="desc">Ingeniero de Sistemas</h2>
-                <!-- <ul class="icons">
-                    <li>
-                        <a href="https://www.linkedin.com/in/leonardo-abanto/" target="_blank">
-                            <i class="fa fa-linkedin fa-2x"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/LeonardoAbanto" target="_blank">
-                            <i class="fa fa-github fa-2x"></i>
-                        </a>
-                    </li>
-                </ul> -->
         </div>
         <div id="overlay"></div>
         <div id="boton-abajo">
-
-            <a onclick="window.scrollTo(0, document.getElementById('cuerpo').offsetTop); return false;">
-                
-                    <i class="fa fa-chevron-down" aria-hidden="true"></i>
-                
+            <a  href="#" onclick="window.scrollTo(0, document.getElementById('cuerpo').offsetTop); return false;">
+                    <i class="fa fa-chevron-down" aria-hidden="true"></i>        
             </a>
-
         </div>
     </div>
-    <div class="container mt-4" id="cuerpo">
+    <div id="cuerpo">
                 <!-- ACERCA DE -->
-                <section class="section">
-                    <img class="prof-img" src="assets/media/fotocuadrada.jpg" alt="Leonardo Abanto">
-                    <div class="section-inner">
-                        <h2>Acerca de</h2>
-                        <div>Estudiante de décimo superior de Ingeniería de Sistemas en la universidad de Lima.</div>
-                    </div>
-                </section>
-                <!-- PROYECTOS -->
-                <section class="section">
-                    <div class="section-inner">
-                        <h2>Proyectos</h2>
-                        <div>
-                            <hr class="divider">
-                            <div class="row proyect d-flex align-items-center">
-                                <img src="assets/media/manjilane.jpg" alt="Manjilane" class="col-4">
-                                <div class="col-8">
-                                    <h3>Manjilane</h3>
-                                    <p>Manjilane es una plataforma web de tipo Marketplace diseñada para conectar importadores con mayoristas. Elaborada utilizando WordPress como participación para el Concurso Primer Paso de la Universidad de Lima, Manjilane fue incluida dentro de los 20 mejores proyectos.</p>
-                                    <a href="https://www.manjilane.com/" target="_blank">
-                                        <i class="fa fa-external-link"></i> 
-                                        Más información
-                                    </a>
-                                </div>
+                <section class="section" id="about">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-4">
+                                <h2>Acerca De</h2>
                             </div>
-                            <hr class="divider">
+                            <p class="col-8">Estudiante de Ingeniería de Sistemas en la universidad de Lima.Estudiante de Ingeniería de Sistemas en la universidad de Lima.Estudiante de Ingeniería de Sistemas en la universidad de Lima.Estudiante de Ingeniería de Sistemas en la universidad de Lima.Estudiante de Ingeniería de Sistemas en la universidad de Lima.Estudiante de Ingeniería de Sistemas en la universidad de Lima.Estudiante de Ingeniería de Sistemas en la universidad de Lima.Estudiante de Ingeniería de Sistemas en la universidad de Lima.Estudiante de Ingeniería de Sistemas en la universidad de Lima.</p>  
                         </div>
                     </div>
+                </section>
+                <!-- NUEVO PROYECTOS -->
+                <section class="section" id="projects">
+                        <h2>Proyectos</h2>
+                        <div class="container">
+                            <!-- Proyecto 1 -->
+                            <div class="proyecto">
+                                <div class="proyecto-img">
+                                    <img src="assets/media/a.png" alt="img">
+                                </div>
+                                <div class="proyecto-txt">
+                                    <h3>Manjilane</h3>
+                                    <p>Manjilane es una plataforma web de tipo Marketplace diseñada para conectar importadores con mayoristas. Elaborada utilizando WordPress como participación para el Concurso Primer Paso de la Universidad de Lima, Manjilane fue incluida dentro de los 20 mejores proyectos.</p>
+                                    <a a href="https://www.manjilane.com/" target="_blank">Ver Proyecto</a>
+                                    <div class="skills">
+                                        <ul>
+                                            <li>WordPress</li>
+                                            <li>HTML</li>
+                                            <li>PHP</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Proyecto 2 -->
+                            <div class="proyecto">
+                                <div class="proyecto-img">
+                                    <img src="assets/media/a.png" alt="img">
+                                </div>
+                                <div class="proyecto-txt">
+                                    <h3>Titulo</h3>
+                                    <p>DescripsionEstudiante de Ingeniería de Sistemas en la universidad de LimaEstudiante de Ingeniería de Sistemas en la universidad de Lima</p>
+                                    <a href="www.google.com">Ver Proyecto</a>
+                                    <div class="skills">
+                                        <ul>
+                                            <li>Uno</li>
+                                            <li>Dos</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                 </section>
                 <!-- LOGROS Y CERTIFICACIONES -->
                 <section class="section">
@@ -187,3 +196,19 @@
     <script type="text/javascript" src="assets/js/index.js"></script>
 </body>
 </html>
+
+                <!-- <ul class="icons">
+                    <li>
+                        <a href="https://www.linkedin.com/in/leonardo-abanto/" target="_blank">
+                            <i class="fa fa-linkedin fa-2x"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/LeonardoAbanto" target="_blank">
+                            <i class="fa fa-github fa-2x"></i>
+                        </a>
+                    </li>
+                </ul> -->
+
+                <!-- foto -->
+                <!-- <img class="prof-img" src="assets/media/fotocuadrada.jpg" alt="Leonardo Abanto"> -->
