@@ -7,6 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src='https://www.google.com/recaptcha/api.js'></script>
     <link rel="stylesheet" href="assets/styles/index.css">
 </head>
 <body>
@@ -23,14 +24,14 @@
                 <a href="#" onclick="window.scrollTo(0, document.getElementById('educacion').offsetTop); return false;">Educación</a>
             </li>
             <li>
-                <a href="#" onclick="window.scrollTo(0, document.getElementById('certs').offsetTop); return false;">Logros</a>
+                <a href="#" onclick="window.scrollTo(0, document.getElementById('certs').offsetTop); return false;">Certificados</a>
             </li>
             <li>
                 <a href="#" onclick="window.scrollTo(0, document.getElementById('contacto').offsetTop); return false;">Contactar</a>
             </li>
         </ul>
     </header>
-    <!-- Sección principal -->
+    <!-- Sección inicial -->
     <div class="inicio">
         <div class="container pt-4 pb-4 titulo" >
                 <h1 class="name">LEONARDO ABANTO</h1>
@@ -92,7 +93,7 @@
                 </section>
                 <!-- NUEVO CERTIFICACIONES -->
                 <section class="section" id="certs">
-                    <h2>Logros y Certificados</h2>
+                    <h2>Certificados</h2>
                     <div class="cert">
                         <img src="assets/media/certs/B2First.jpg" alt="">
                         <div class="cert-txt">
@@ -107,6 +108,7 @@
                             <h3>AWS Certified Solutions Architect - Associate</h3>
                             <h4>Amazon Web Services (AWS)</h4>
                             <p>Ago 2021 - Ago 2024</p>
+                            <a a href="/public/assets/media/certs/AWS-SAA.pdf" target="_blank">Ver</a>
                         </div>
                     </div>
                     <div class="cert">
@@ -115,25 +117,47 @@
                             <h3>Microsoft Certified: Azure Fundamentals</h3>
                             <h4>Microsoft</h4>
                             <p>Jul 2021 - Sin expiración</p>
+                            <a a href="/public/assets/media/certs/AZ-900.pdf" target="_blank">Ver</a>
                         </div>
                     </div>
                 </section>
                <!-- CONTACTO -->
                <section class="section" id="contacto">
-                    990250953
+                    <h2>Contacto</h2>
+                    <form id="contact-form" method="post">
+                        <input type="text" id="name-input" placeholder="Tu nombre..." class="form-control" required/>
+                        <input type="email" id="email-input" placeholder="Tu correo..." class="form-control" required/>
+                        <textarea id="description-input" rows="3" placeholder="Mensaje..." class="form-control" required></textarea>
+                        <!-- <div class="g-recaptcha" data-sitekey="6Lc7cVMUAAAAAM1yxf64wrmO8gvi8A1oQ_ead1ys" class="form-control" style="width:100%;"></div> -->
+                        <button type="button" onClick="submitToAPI(event)" class="btn btn-lg" >Enviar</button>
+                    </form>
                </section>
                <!-- FOOTER -->
                <footer id="footer">
                    <div class="container">
                         <div class="row">
                             <div class="col-5 foot1">
-                                <p>Hola</p>
+                                <p>Copyright © 2021 Leonardo Abanto</p>
                             </div>
                             <div class="col-2 foot2">
-                                <p>Hola</p>
+                                <span class="boton-arriba">
+                                    <a  href="#" onclick="window.scrollTo(0, document.getElementById('menu').offsetTop); return false;">
+                                            <i class="fa fa-chevron-up" aria-hidden="true"></i>        
+                                    </a>
+                                </span>
                             </div>
                             <div class="col-5 foot3">
-                                <p>Hola</p>
+                                <ul>
+                                    <li>
+                                        <a href="https://github.com/LeonardoAbanto/" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.facebook.com/Leonardo.Abanto/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
                    </div>
@@ -142,19 +166,3 @@
     <script type="text/javascript" src="assets/js/index.js"></script>
 </body>
 </html>
-
-                <!-- <ul class="icons">
-                    <li>
-                        <a href="https://www.linkedin.com/in/leonardo-abanto/" target="_blank">
-                            <i class="fa fa-linkedin fa-2x"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/LeonardoAbanto" target="_blank">
-                            <i class="fa fa-github fa-2x"></i>
-                        </a>
-                    </li>
-                </ul> -->
-
-                <!-- foto -->
-                <!-- <img class="prof-img" src="assets/media/fotocuadrada.jpg" alt="Leonardo Abanto"> -->
