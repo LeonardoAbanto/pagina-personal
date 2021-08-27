@@ -102,7 +102,7 @@ body{
     font-weight: 300;
     position:relative;
     display: inline-block;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
 } 
 h2:after {
     position: absolute;
@@ -121,6 +121,8 @@ h2:after {
 }
 #acercade p{
     text-align: justify;
+    font-size: 0.95em;
+    font-weight: 100;
 }
 /* projects */
 #proyectos{
@@ -283,6 +285,7 @@ h2:after {
 #contacto h2{
     color:white;
     font-size:1.4em;
+    margin-bottom: 20px;
 }
 #contact-form{
     max-width: 500px;
