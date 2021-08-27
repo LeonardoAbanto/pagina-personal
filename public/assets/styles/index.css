@@ -224,6 +224,77 @@ h2:after {
     color: rgb(154, 144, 129);
 }
 
+/* CERTS */
+
+#certs{
+    background-color: rgb(41, 43, 43);
+}
+.cert{
+    background-color: rgb(36, 37, 37);
+    max-width: 900px;
+    position: relative;
+    margin: 0 auto 30px auto;
+    overflow: hidden;
+    border-radius: 4px;
+}
+.cert img{
+    display: block;
+    max-width:200px;
+    max-height:200px;
+    padding: 20px;
+    height: auto;
+}
+.cert-txt{
+    position:absolute;
+    top:50%;
+    transform: translateY(-50%);
+    margin-left:200px;
+    padding: 30px;
+    text-align: left;
+}
+.cert h3{
+    font-size: 1.25em;
+    font-weight: 300;
+    margin: 0 0 10px 0;
+    color: rgb(188, 180, 169);
+}
+.cert h4{
+    color: rgb(154, 144, 129);
+    clear: both;
+    font-weight: 500;
+    margin: 0 0 10px 0;
+    font-size: 1.1em;
+}
+.cert p{
+    margin: 0 0 15px 0;
+    font-size: 0.95em;
+    color: rgb(154, 144, 129);
+}
+
+/* Contacto */
+
+#contacto{
+    background-color: rgb(48, 113, 154);
+}
+
+/* Footer */
+
+#footer{
+    background-color: rgb(36, 37, 37);
+    padding: 50px;
+}
+
+.foot1{
+    margin:0;
+    color: rgb(154, 144, 129);
+}
+.foot2{
+    text-align: center;
+}
+.foot3{
+    text-align: right;
+}
+
 /* 1.0 */
 .prof-img{
     max-width: 300px;
@@ -269,14 +340,6 @@ h2:after {
     text-align: justify;
 }
 
-
-
-.cert img{
-    display: block;
-    max-width:300px;
-    max-height:300px;
-    height: auto;
-}
 .h4{
     font-size: 150%;
 }
